@@ -1,8 +1,14 @@
-[gd_scene load_steps=2 format=2]
+[gd_scene load_steps=3 format=2]
 
 [ext_resource path="res://scenes/Player.tscn" type="PackedScene" id=1]
+[ext_resource path="res://assets/background/bg1.png" type="Texture" id=2]
 
 [node name="Level" type="Node2D"]
+
+[node name="Bg1" type="Sprite" parent="."]
+position = Vector2( 126.5, 246.692 )
+scale = Vector2( 1.94325, 1.94325 )
+texture = ExtResource( 2 )
 
 [node name="Player" parent="." instance=ExtResource( 1 )]
 position = Vector2( 96, 72 )
