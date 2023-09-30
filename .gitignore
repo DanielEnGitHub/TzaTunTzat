@@ -1,0 +1,18 @@
+# Ignorar archivos generados por Godot
+/export/
+/import/
+/Library/
+
+# Ignorar archivos de respaldo
+*.bak
+*.backup
+*.swp
+*~
+
+# Ignorar archivos de compilación y ejecución
+*.exe
+*.dll
+*.so
+*.zip
+*.apk
+*.pck
