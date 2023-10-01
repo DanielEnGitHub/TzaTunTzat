@@ -34,8 +34,9 @@ func move_player(delta):
 		is_running = true
 	else:
 		is_running = false
-		
-	position += velocity * delta
+
+	# Utiliza move_and_slide para gestionar las colisiones
+	velocity = move_and_slide(velocity)
 
 	if velocity.x < 0:
 		facing_left = true

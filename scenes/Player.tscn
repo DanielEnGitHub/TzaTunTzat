@@ -22,24 +22,25 @@ animations = [ {
 } ]
 
 [sub_resource type="RectangleShape2D" id=2]
-extents = Vector2( 21, 28 )
+extents = Vector2( 17.5, 7 )
 
 [node name="Player" type="KinematicBody2D"]
 position = Vector2( 24, 28 )
 script = ExtResource( 7 )
 
 [node name="SpritePlayer" type="AnimatedSprite" parent="."]
-position = Vector2( 11.25, 7.25 )
-scale = Vector2( 4.34375, 4.34375 )
+position = Vector2( 0.749999, -3.25 )
+scale = Vector2( 3.03125, 3.03125 )
 frames = SubResource( 1 )
 animation = "idle"
 playing = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2( 11, 14 )
+position = Vector2( 0.5, 14 )
 shape = SubResource( 2 )
 
 [node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2( 11, 14 )
 current = true
 drag_margin_h_enabled = true
 drag_margin_v_enabled = true
